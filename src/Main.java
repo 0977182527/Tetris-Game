@@ -1,0 +1,20 @@
+import javax.swing.*;
+
+public class  Main {
+    public static void main(String[] args) {
+        JFrame window = new JFrame("Tetris Game");
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setResizable(false);
+
+        // Ajout de GamePAnel
+        GamePanel gp = new GamePanel();
+
+        window.add(gp);
+        window.pack();
+
+        window.setLocationRelativeTo(null);
+        window.setVisible(true) ;
+
+
+    }
+}
